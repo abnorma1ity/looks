@@ -20,15 +20,15 @@ module.exports = function Looks(dispatch) {
     people.push(event);
   });
 
-/*  dispatch.hook('S_DESPAWN_USER', 3, event => {
+  dispatch.hook('S_DESPAWN_USER', 3, event => {
     people.forEach((player, index) => {
-      if(player.guid.toString() === event(gameId).toString()) { // Doesn't work fix it someone
+      if(player.gameId.toString() === event.gameId.toString()) { 
         people.splice(index, 1);
       }
     });
 
 });
-*/
+
 
   dispatch.hook('S_LOAD_TOPO', 'raw', event => {
     people = [];
@@ -117,8 +117,8 @@ module.exports = function Looks(dispatch) {
     /*obj['class'] = ['Warrior', 'Lancer', 'Slayer', 'Berserker', 'Sorcerer',
       'Archer', 'Mystic', 'Reaper', 'Gunner', 'Brawler', 'Ninja', 'Valkyrie'][
         Math.floor((data.templateId - 100) / 200 % 50)
-      ];
-	*/
+      ];*/
+	
 
     obj['details'] = Uint8Array.from( data.details );
     obj['shape'] = Uint8Array.from( data.shape );
