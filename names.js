@@ -25,15 +25,15 @@ module.exports = {
     'nose.tipWidth',
     'nose.tip',
     'nose.nostrilFlare',
-    'mouth.pucker',
+    'mouth.pucker', // Полнота
     'mouth.position',
-    'mouth.width',
-    'mouth.lipThickness',
+    'mouth.width', // Ширина
+    'mouth.lipThickness', // Толщина губ
     'mouth.corners',
     'eyes.shape',
     'nose.bend',
     'boneStructure.jawWidth',
-    'mouth.gape'
+    'mouth.gape' // Открытость
   ],
   shape: [
     'head._1',

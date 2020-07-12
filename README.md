@@ -1,6 +1,12 @@
-# Looks
+# Installation
 
-[Support me on Patreon!](https://www.patreon.com/saegusa)
+1.Download [latest](https://github.com/tera-proxy/tera-data/tree/master/map) mapped packet for C_CREATE_USER def
+
+2.Put .map into [root_folder]/data/opcodes
+
+3.Enjoy!
+
+# Looks
 
 Have you ever seen a character you like so much you thought like:
 >Damn wish I knew what sliders he/she used when creating that.
@@ -24,7 +30,7 @@ Command | Usage | Description
 ## Notes:
 * !looks save/copy self can always be used.
 * !looks save/copy \<name\> requires the character to be nearby (enough to be rendered.)
-* !looks copy requires C_CREATE_USER to be mapped (which currently is not.) So the functionality won't work until you map it manually or devs decide to add it to mapped list.
+* !looks copy requires C_CREATE_USER to be mapped (which currently is not.) So the functionality won't work until you map it manually or devs decide to add it to mapped list. So it doesn't work if you know how to fix it DM me discord: saya#0733
 
 ## Credits:
 * **Saegusa:** for this awesome idea, beast and beautiful code, overall badass.

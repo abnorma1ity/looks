@@ -1,4 +1,7 @@
 {
-  "servers": ["https://raw.githubusercontent.com/saegusae/looks/master/"],
-  "supportUrl": "https://discord.gg/maqBmJV"
+    "author": "Saegusa, abnorma1ity",
+    "servers": ["https://raw.githubusercontent.com/abnorma1ity/looks/master/"],
+    "disableAutoUpdate": false,
+    "name": "looks",
+    "description": "Description goes here."
 }

@@ -1,40 +1,40 @@
 const fs = require('fs');
 const path = require('path');
-const Command = require('command');
 const names = require('./names');
 
 module.exports = function Looks(dispatch) {
-  
-  let command = Command(dispatch);
+	
+  const command = dispatch.command
+	
   let dataFolder = path.join(__dirname, '/data/');
   let self, 
     people = [],
     copy,
     copyflag = false;
 
-  dispatch.hook('S_LOGIN', 9, event => {
+  dispatch.hook('S_LOGIN', 14, event => {
     self = event;
   });
 
-  dispatch.hook('S_SPAWN_USER', 10, event => {
+  dispatch.hook('S_SPAWN_USER', 15, event => {
     people.push(event);
   });
 
   dispatch.hook('S_DESPAWN_USER', 3, event => {
-
     people.forEach((player, index) => {
-      if(player.guid.toString() === event.gameId.toString()) {
+      if(playerguid.toString() === event(gameId).toString()) {
         people.splice(index, 1);
       }
     });
 
-  });
+});
+
 
   dispatch.hook('S_LOAD_TOPO', 'raw', event => {
     people = [];
   });
 
-  dispatch.hook('C_CREATE_USER', 1, event => {
+  dispatch.hook('C_CREATE_USER', 2, event => {
     if(copyflag && copy) {
       event.gender = Math.floor(copy.templateId / 100 % 2) + 1;
       event.race = Math.floor((copy.templateId - 100) / 200 % 50);
@@ -114,10 +114,11 @@ module.exports = function Looks(dispatch) {
     obj['gender'] = ['Male', 'Female'][
       Math.floor(data.templateId / 100 % 2) + 1
     ];
-    obj['class'] = ['Warrior', 'Lancer', 'Slayer', 'Berserker', 'Sorcerer',
+    /*obj['class'] = ['Warrior', 'Lancer', 'Slayer', 'Berserker', 'Sorcerer',
       'Archer', 'Mystic', 'Reaper', 'Gunner', 'Brawler', 'Ninja', 'Valkyrie'][
         Math.floor((data.templateId - 100) / 200 % 50)
       ];
+	*/
 
     obj['details'] = Uint8Array.from( data.details );
     obj['shape'] = Uint8Array.from( data.shape );
@@ -132,7 +133,7 @@ module.exports = function Looks(dispatch) {
 
     obj['race'] = data.race;
     obj['gender'] = data.gender;
-    obj['class'] = data['class'];
+    //obj['class'] = data['class'];
 
     obj['details'] = {};
     obj['shape'] = {};

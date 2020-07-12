@@ -1,13 +1,14 @@
 {
-  "files": {
-    "index.js": "18107dd0924d513c01546cfb323eff7536077e3825c5d8e3afa031eac1fc6db0",
-    "names.js": "64046ddfb20364c8252a2d2f70a1313a008da8e9ec1ebca3a0daa9bd92483b37",
-    "module.json": "d5d414545f48d0e211c2e31b538470af280900515c3e94ae61199a37986853a0"
-  },
-  "defs": {
-    "S_LOGIN": 9,
-    "S_SPAWN_USER": 11,
-    "S_DESPAWN_USER": 3,
-    "C_CREATE_USER": 1
-  }
+    "files": {
+        "index.js": "56b0048e1bd1fc1440377f68c558984afefbee1e1cd30a6761182449d1818b67",
+        "module.json": "7cdee4ab8ead1c92cb5fc2b40266db6cbc51aad6af516f0296672eafbdfbe4cc",
+        "names.js": "cc5dc33a28b077f1718db5c5ab025361ad54f58902251e75272422b75c000fc3"
+    },
+    "defs": {
+        "C_CREATE_USER": 2,
+        "S_DESPAWN_USER": 3,
+        "S_LOAD_TOPO": "raw",
+        "S_LOGIN": 14,
+        "S_SPAWN_USER": 15
+    }
 }
