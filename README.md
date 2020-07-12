@@ -30,11 +30,11 @@ Command | Usage | Description
 ## Notes:
 * !looks save/copy self can always be used.
 * !looks save/copy \<name\> requires the character to be nearby (enough to be rendered.)
-* !looks copy requires C_CREATE_USER to be mapped (which currently is not.) So the functionality won't work until you map it manually or devs decide to add it to mapped list. So it doesn't work if you know how to fix it DM me discord: saya#0733
+* !looks copy requires C_CREATE_USER to be mapped (which currently is not.) So the functionality won't work until you map it manually or devs decide to add it to mapped list.
 
 ## Credits:
 * **Saegusa:** for this awesome idea, beast and beautiful code, overall badass.
 * **Caali:** for reference data.
 * **SaltyMonkey:** For reference code on character creation data.
-* **Leiki:** for testing muh stuff.
-* **Dong:** Was awake to answer a question while I was coding dis.
+* **Kygas:** for help with code.
+* **Abnorma1ity:** I JUST FORKED DIS XD.
