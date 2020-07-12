@@ -20,7 +20,7 @@ module.exports = function Looks(dispatch) {
     people.push(event);
   });
 
-  dispatch.hook('S_DESPAWN_USER', 3, event => {
+/*  dispatch.hook('S_DESPAWN_USER', 3, event => {
     people.forEach((player, index) => {
       if(player.guid.toString() === event(gameId).toString()) { // Doesn't work fix it someone
         people.splice(index, 1);
@@ -28,7 +28,7 @@ module.exports = function Looks(dispatch) {
     });
 
 });
-
+*/
 
   dispatch.hook('S_LOAD_TOPO', 'raw', event => {
     people = [];
